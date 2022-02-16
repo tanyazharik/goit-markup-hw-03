@@ -25,30 +25,34 @@
 <body>
     <!-- Шапка профиля-->
     <section>
-    <div class="container">
+    
     <header class="header">
-        
-        <nav>
+        <div class="container upper-container">
+            
+            <nav class="header-nav">
             <a href="" class="link"><span class="primary-logo">Web</span><span class="secondary-logo">Studio</span></a>
-            <ul class="nav list">
-                <li><a href="./studio.html" class="link">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
+            <ul class="nav-list">
+                <li class="item"><a href="./studio.html" class="link nav-link">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
-
-        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        
-    </header>
-    </div>
+            <ul class="auto-nav">
+            <li class="auto-nav-item" > 
+        <a href="mailto:info@devstudio.com" class="link auto-link">info@devstudio.com</a></li>
+            <li class="auto-nav-item">
+        <a href="tel:+380961111111" class="link auto-link">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+        </header>
+                 
     </section>
     <!-- Главная часть-->
     <main>
         <!--Раздел 1-->
         <section>
-            <div class="container">
-        <section class="hero-page">
+            <div class="container hero-container">
+        <section class="hero">
             <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
             <button type="button" class="button-hero">Заказать услугу</button>
         </section>
@@ -60,23 +64,27 @@
         <section class="primary-section">
                     <ul class="section">
                 <li>
+                    <div class="items-list">
                     <h3 class="section-item">Внимание к деталям</h3>
-                    <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></div>
                 </li>
 
                 <li>
+                    <div class="items-list">
                     <h3 class="section-item">Пунктуальность</h3>
                     <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-                    </p>
+                    </p></div>
                 </li>
                 <li>
+                    <div class="items-list">
                     <h3 class="section-item">Планирование</h3>
                     <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.
-                    </p>
+                    </p></div>
                 </li>
                 <li>
+                    <div class="items-list">
                     <h3 class="section-item">Современные технологии</h3>
-                    <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></div>
                 </li>
             </ul>
             </section>
@@ -87,7 +95,7 @@
             <div class="container">
               <section class="primary-section">
                   <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="jobs-photo">
             <li><img src="./images/img.jpg" alt="наброски и схемы" width="370" height="294" /></li>
             <li><img src="./images/img-1.jpg" alt="процесс реализации" width="370" height="294" /></li>
             <li><img src="./images/img-2.jpg" alt="реализация проекта" width="370" height="294" /></li>
@@ -102,7 +110,7 @@
         <section class="section-team">
             
             <h2 class="section-title">Наша команда</h2>
-            <ul class="section">
+            <ul class="section-job">
                 <li>
                     <img src="./images/img-3.jpg" alt="фото1" width="270" height="260" />
                     <h3 class="section-person">Игорь Демьяненко</h3>
