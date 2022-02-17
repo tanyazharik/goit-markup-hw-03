@@ -31,7 +31,8 @@ body {
    width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
-   margin: auto;
+   margin-left: auto;
+   margin-right: auto;
    background-color: violet;
    outline: 1px solid tomato;
       }
@@ -108,6 +109,9 @@ body {
 .item,
 .auto-link {
     padding: 32px 0;
+}
+auto-link:nth-child(1) {
+    padding-left: 0;
 }
 .nav-list .item:last-child {
     margin-right: 0;
