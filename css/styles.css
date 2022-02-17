@@ -44,7 +44,7 @@ body {
 }
 .container-flex {
     display: flex;
-}
+    }
 
  h1,
  h2,
@@ -58,6 +58,9 @@ body {
 }
 
 .list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -106,7 +109,7 @@ body {
         margin-right: 50px;
 }
 
-.item,
+.link,
 .auto-link {
     padding: 32px 0;
 }
@@ -189,16 +192,12 @@ margin-left: 0;
 margin-right: 0;
 }
 /* Hero */
-.primary-section {
+.about-us section {
    padding-bottom: 108px;
   background-color: #e5e5e5;
   outline: 2px solid tomato;
 }
-.button-hero,
-.button-project {
-    margin-right: 8px;
-    text-align: center;
-  cursor: pointer;
+
 }
 
 button {
@@ -209,6 +208,10 @@ button {
     outline: 1px solid tomato;
 }
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+
     text-align: center;
     background-color: #2f303a;
     margin-top: auto;
@@ -228,18 +231,11 @@ button {
 }
 
 
-
-.button-project {
-    display: inline-block;
-    
-    padding: 10px 32px;
-    text-align: center;
-    border: 1px solid transparent;
-}
 /*  Section  */
 
 .section {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
   ul {
@@ -266,7 +262,7 @@ button {
 }
 .section-item {
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-size: 14px;
   font-weight: 700;
@@ -275,20 +271,37 @@ button {
   text-transform: uppercase;
 }
 .button-project {
+
+    display: flex;
+   flex-direction: row;   
+   border-radius: 4px;
+   padding: 6px 22px;
+   text-align: center;
+
   color: var(--title-text-color);
   background-color: var(--sub-background-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  
+   border: 1px solid transparent;
 }
+
 .button-project:hover,
 .button-project:focus {
   color: var(--title);
   background-color: var(--accent-color);
 }
+.button-hero,
+.button-project {
+    margin-right: 8px;
+    text-align: center;
+  cursor: pointer;
+}
 
 .title-item {
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 4px;
   color: var(--title-text-color);
@@ -298,6 +311,7 @@ button {
   letter-spacing: 0.06em;
 }
 .title-text {
+    text-align: center;
     margin-bottom: 20px;
   color: var(--primary-text-color);
   font-size: 16px;
@@ -350,6 +364,9 @@ button {
   
 }
 
+.about {
+    display: flex;
+}
 .items-list {
     display: flex;
     flex-basis: calc((100% - 30px) /4);
@@ -365,10 +382,7 @@ button {
     border-bottom: 1px solid var(--title;)
 }
 
-.work-list {
-    display: inline-block;
-    border-bottom: 1px solid #EEEEEE;
- margin: 30px;
+
 }
 .section-person {
     display: flex;
@@ -400,6 +414,7 @@ button {
     margin-bottom: 10px;
 }
 .images-photo {
+    display: block;
     margin-right: 30px;
    }
    .jobs-photo {
@@ -443,7 +458,8 @@ margin-right: 0;
   letter-spacing: 0.03em;
 }
 
-.secondary-link {
+.secondary-link { 
+    margin-bottom: 60px;   
   color: #ffffff99;
   font-size: 14px;
   line-height: 1.71;
@@ -462,6 +478,41 @@ margin-right: 0;
 .link {
   text-decoration: none;
 }
-.projects {
-    margin-top: 50px;
+.project-set {
+    outline: 1px solid tomato;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-set > .work-list {
+    flex-basis: calc(100% / 3 - 20px);
+}
+
+
+/* карточки */
+   
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work-list {
+    outline: 1px solid red;
+    border: 1px solid #EEEEEE;
+    
+   
+}
+
+.work-list:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.card-content {
+    padding: 30px;
+}
+.title-text {
+    margin-top: 4px;
 }
