@@ -417,8 +417,7 @@ margin-right: 0;
        border-bottom: 0;
    }
 .section-item-text {
-   
-    display: inline-block;
+    width: 270px;
     margin-right: 30px;
     padding-left: 0;
 }
@@ -437,14 +436,8 @@ margin-right: 0;
 margin-right: 0;
 }
 .section-person {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 68px;
-    margin-right: 68px;
-    padding-bottom: 10px;
     
-
+    margin-bottom: 10px;
     text-align: center;
     color: var(--title-text-color);
     font-weight: 500;
